@@ -83,7 +83,7 @@ h1 {
 .about-card {
   background: var(--card); border-radius: 24px; padding: 28px 24px;
   margin: 12px auto 32px; max-width: 740px; box-shadow: var(--shadow);
-  border: 1px solid var(--border); text-align: center; position: relative; overflow: hidden;
+  border: 1px solid var(--gold); text-align: center; position: relative; overflow: hidden;
 }
 .about-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
@@ -103,7 +103,7 @@ h1 {
   display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px;
   background: var(--card); border-radius: 14px; text-decoration: none; color: var(--text);
   font-weight: 600; font-size: 0.95rem; box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-  border: 1.5px solid var(--border); transition: all 0.25s ease; position: relative; overflow: hidden;
+  border: 1.5px solid var(--gold); transition: all 0.25s ease; position: relative; overflow: hidden;
 }
 .social-btn::before {
   content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
@@ -133,7 +133,7 @@ section { margin: 64px 0; }
 .skill {
   background: var(--card); padding: 16px; border-radius: 16px; text-align: center;
   font-weight: 600; font-size: 0.95rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  border: 1.5px solid var(--border); transition: all 0.25s ease; position: relative;
+  border: 1.5px solid var(--gold); transition: all 0.25s ease; position: relative;
 }
 .skill:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(199,149,19,0.15); border-color: var(--gold-light); background: #fffef9; }
 
@@ -144,7 +144,7 @@ section { margin: 64px 0; }
 }
 .project-card {
   background: var(--card); border-radius: 22px; padding: 26px; box-shadow: var(--shadow);
-  border: 1.5px solid var(--border); transition: all 0.35s cubic-bezier(0.2,0.8,0.2,1);
+  border: 1.5px solid var(--gold); transition: all 0.35s cubic-bezier(0.2,0.8,0.2,1);
   display: flex; flex-direction: column; height: 100%; position: relative; overflow: hidden;
 }
 .project-card::before {
@@ -176,7 +176,7 @@ section { margin: 64px 0; }
 /* Footer */
 footer {
   text-align: center; padding: 48px 20px 32px; color: var(--muted);
-  font-size: 0.9rem; margin-top: 80px; border-top: 1px solid var(--border);
+  font-size: 0.9rem; margin-top: 80px; border-top: 1px solid var(--gold);
   background: linear-gradient(180deg, transparent, rgba(255,255,255,0.5));
 }
 .footer-links { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; align-items: center; }
@@ -215,7 +215,7 @@ body::after {
 h1, .section-title { color: #fff8e1; text-shadow: 0 2px 14px rgba(0,0,0,0.45); }
 .tagline { color: #fff3c4; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
 .subtitle { color: #f8e7a8; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
-footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(20,9,2,0.45)); border-top-color: rgba(244,208,63,0.25); }
+footer { color: #f3e3b0; background: linear-gradient(180deg, transparent, rgba(20,9,2,0.45)); border-top-color: var(--gold-light); }
 .contact-card {
   background: var(--card); border-radius: 24px; padding: 32px 24px; max-width: 740px; margin: 0 auto;
   box-shadow: var(--shadow); border: 1px solid var(--border); text-align: center;
