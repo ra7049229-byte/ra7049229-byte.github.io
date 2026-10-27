@@ -239,6 +239,12 @@ a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contac
   outline: 3px solid #f4d03f; outline-offset: 3px; border-radius: 8px;
   box-shadow: 0 0 0 6px rgba(30,14,4,0.55);
 }
+/* Download CV: explicit, high-contrast keyboard focus ring */
+.cv-download:focus-visible {
+  outline: 3px solid #f4d03f; outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(30,14,4,0.55), 0 0 18px rgba(244,208,63,0.6);
+  color: #8a6a0f; border-color: var(--gold-light);
+}
 /* Skip link: hidden until it receives keyboard focus */
 .skip-link {
   position: absolute; left: 50%; top: -120px; transform: translateX(-50%); z-index: 1000;
@@ -282,8 +288,8 @@ a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contac
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
         Email
       </a>
-      <a href="cv/Mridul_Ahsan_Robin_CV.pdf" download="Mridul_Ahsan_Robin_CV.pdf" class="social-btn" aria-label="Download CV">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <a href="cv/Mridul_Ahsan_Robin_CV.pdf" download="Mridul_Ahsan_Robin_CV.pdf" class="social-btn cv-download" aria-label="Download CV (PDF)" title="Download Mridul Ahsan Robin CV (PDF)">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download CV
       </a>
     </div>
