@@ -257,9 +257,15 @@ a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contac
 }
 .skip-link:focus-visible { top: 12px; outline: 3px solid #f4d03f; outline-offset: 3px; }
 #main:focus { outline: none; }
+/* Touch feedback: tap/press state for phones and tablets (no hover there) */
+.social-btn:active, .skill:active, .project-card:active, .about-card:active {
+  transform: scale(0.98); border-color: var(--gold-light); background: #fffdf5;
+  box-shadow: 0 4px 14px rgba(199,149,19,0.22); transition-duration: 0.12s;
+}
 @media (prefers-reduced-motion: reduce) {
   .social-btn, .skill, .project-card, .about-card { transition-duration: 0.01ms !important; }
-  .social-btn:hover, .skill:hover, .project-card:hover, .about-card:hover { transform: none; }
+  .social-btn:hover, .skill:hover, .project-card:hover, .about-card:hover,
+  .social-btn:active, .skill:active, .project-card:active, .about-card:active { transform: none; }
 }
 </style>
 </head>
