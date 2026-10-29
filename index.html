@@ -271,6 +271,22 @@ a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contac
   .social-btn:hover, .skill:hover, .project-card:hover, .about-card:hover,
   .social-btn:active, .skill:active, .project-card:active, .about-card:active { transform: none; }
 }
+
+/* Full dark theme: no white surfaces */
+.about-card, .social-btn, .skill, .project-card, .contact-card {
+  background: rgba(30,18,6,0.72) !important; border-color: var(--gold) !important;
+  color: #fff3c4 !important; box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+}
+.about-card:hover, .social-btn:hover, .skill:hover, .project-card:hover,
+.about-card:active, .social-btn:active, .skill:active, .project-card:active {
+  background: rgba(50,30,10,0.85) !important; color: #fff8e1 !important;
+}
+.about-text, .contact-text, .project-desc { color: #f3e3b0 !important; }
+.project-title, .contact-title { color: #fff8e1 !important; }
+.social-btn:hover { color: #f4d03f !important; }
+.badge, .tag { background: rgba(244,208,63,0.14) !important; color: #f8e7a8 !important; border-color: rgba(244,208,63,0.5) !important; }
+.avatar { border-color: var(--gold-light) !important; }
+.project-icon { background: rgba(244,208,63,0.15) !important; border-color: rgba(244,208,63,0.4) !important; }
 </style>
 </head>
 <body>
