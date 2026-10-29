@@ -288,6 +288,16 @@ a:focus-visible, .social-btn:focus-visible, .project-link:focus-visible, .contac
 .badge, .tag { background: rgba(255,255,255,0.55) !important; color: #6b4f00 !important; border-color: #c79513 !important; }
 .avatar { border-color: var(--gold-light) !important; }
 .project-icon { background: rgba(255,255,255,0.6) !important; border-color: var(--gold) !important; }
+/* Hover and keyboard focus for golden cards */
+.about-card:hover, .project-card:hover, .skill:hover, .social-btn:hover { box-shadow: 0 14px 32px rgba(199,149,19,0.42) !important; }
+.about-card:focus-within, .project-card:focus-within, .contact-card:focus-within, .skill:focus-within {
+  border-color: #6b4f00 !important; box-shadow: 0 0 0 3px #f4d03f, 0 12px 30px rgba(199,149,19,0.45) !important;
+}
+.project-card:focus-within { transform: translateY(-4px); }
+.social-btn:focus-visible, .project-link:focus-visible, .contact-btn:focus-visible, .project-card a:focus-visible, .contact-card a:focus-visible {
+  outline: 3px solid #6b4f00; outline-offset: 3px; border-radius: 10px;
+}
+@media (prefers-reduced-motion: reduce) { .project-card:focus-within { transform: none; } }
 </style>
 </head>
 <body>
